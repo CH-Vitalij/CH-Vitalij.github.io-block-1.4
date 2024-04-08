@@ -43,15 +43,12 @@ html {
   margin-bottom: 30px;
 }
 
-.btn {
-  width: 40px;
-  height: 40px;
-}
-
 .header__burger {
   background-image: url("icons/burger.png");
   background-size: cover;
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .header__logo {
@@ -64,16 +61,15 @@ html {
   background-image: url("icons/search.png");
   background-size: cover;
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .slide-menu__navigation {
   flex: 1 1 auto;
-  /* max-width: 320px; */
-  /* height: 876px; */
 }
 
 .navigation__main-menu {
-  /* position: relative; */
   list-style-type: none;
 }
 
@@ -102,20 +98,105 @@ html {
 
 .main-menu__item:hover::before {
   opacity: 1;
+  color: #7e7e82;
 }
 
 .main-menu__link {
   display: inline-block;
   max-width: 320px;
   padding-left: 24px;
-  color: #7e7e82;
+  color: #1B1C21;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.20000000298023224px;
   text-align: left;
   text-decoration: none;
+  transition-duration: 0.6s;
+  transition-property: color;
 }
 
-.contacts__list {
+.main-menu__link:hover {
+  color: #7e7e82;
+}
+
+.slide-menu__contacts {
+  margin-left: 24px;
+  margin-bottom: 40px;
+}
+
+.contacts__row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 196px;
+  column-gap: 16px;
+}
+
+.contacts__row .contacts__call {
+  background-image: url("icons/call.png");
+  background-size: cover;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.contacts__row .contacts__chat {
+  background-image: url("icons/chat.png");
+  background-size: cover;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.contacts__row .contacts__profile {
+  background-image: url("icons/profile.png");
+  background-size: cover;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.contacts__email {
+  flex-basis: 106px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  color: #1b1c21;
+  text-decoration: none;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.contacts__tel {
+  flex-basis: 196px;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6000000238418579px;
+  text-align: left;
+  color: #1b1c21;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.slide-menu__lang {
+  margin-left: 24px;
+  margin-bottom: 32px;
+}
+
+.lang__list {
+  display: flex;
+  column-gap: 7px;
   list-style-type: none;
+}
+
+.lang__item {
+  flex-basis: 25px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+}
+
+.lang__item_color_grey {
+  color: #7e7e82;
 }
