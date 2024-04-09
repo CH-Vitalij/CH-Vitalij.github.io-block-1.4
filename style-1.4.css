@@ -1,14 +1,14 @@
 @font-face {
   font-family: "TT Lakes Medium";
   src: url("TTLakes-Medium.eot");
-  src: url("TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
-    url("TTLakes-Medium.woff") format("woff"),
-    url("TTLakes-Medium.ttf") format("truetype");
+  src: local("TT Lakes Medium"), url(/fonts/TTLakes-Medium.woff) format("woff"),
+    url(/fonts/TTLakes-Medium.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 html {
+  /* height: 100%; */
   box-sizing: border-box;
 }
 
@@ -21,9 +21,14 @@ html {
   box-sizing: inherit;
 }
 
+/* ul, ol, li {
+  list-style: none;
+} */
+
 .page {
   font-family: "TT Lakes Medium", sans-serif;
   background-color: #ffffff;
+  /* height: 100%; */
 }
 
 .page__slide-menu {
