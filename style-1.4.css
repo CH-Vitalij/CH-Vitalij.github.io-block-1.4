@@ -71,7 +71,7 @@ li {
   background-size: cover;
 }
 
-.logo {
+.header__logo {
   flex: 1 1 auto;
   width: 97px;
   height: 51px;
